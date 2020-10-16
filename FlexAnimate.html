@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Flex-Animation</title>
+	<style>
+		body{
+			background: linear-gradient(to right, rgba(125, 30, 250, 0.486),rgba(300, 170, 227, 0.1));
+		}
+		.main{
+			align: center;
+		}
+	     .pictures{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+        h2{
+            text-align: center;
+            font-size: larger;
+        }
+
+		img{
+           height: 400px;
+           width: 400px; 
+           margin: 10px;
+		   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.199);
+		   transition: 1.5s;
+		   border-radius: 5px;
+		}
+		img:hover{
+			transform: rotate(50deg);
+            transform-iteration-count: infinite;
+		}
+        .footer{
+            font-size: large;
+        }
+		footer{
+   		 position: move;
+    		padding: auto;
+   			left: 0;
+   		bottom: 0;
+   			width: 100%;
+   		height: 20px;
+   		background-color: pink;
+   		color: black;
+   		text-align: center;
+   		font-size: 15px;
+        }
+        #i1,#i2,#i3,#i4,#i5,#i6{
+            animation-name: identifier;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+        @keyframes identifier {
+          from{height: 400px; width: 400px;}
+          to{height: 450px; width: 450px;}   
+            
+        }
+	</style>
+</head>
+<body>
+    <h2><b>Assignment-1</br> 16 oct. 2020</b></h2>
+	<div class="main">
+		<div class="first">
+			<h1><b>Some Amazing Pictures!<b></h1>
+		</div>
+		<div class="pictures">
+			<img id=i1 src="bg.png" alt="">
+			<img id=i2 src="bl.jpg" alt="">
+			<img id=i3 src="dt.jpg" alt="">
+            <img id=i4 src="mu.jpg" alt="">
+            <img id=i5 src="ld.jpg" alt="">
+            <img id=i6 src="cg.jpg" alt="">
+		</div>
+	</div>
+    <footer class="footer">
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">
+		PUSHPENDRA SINGH ; 1906160 ; LAB-08
+		</div>
+		<!-- Copyright -->
+	  
+	  </footer>
+</body>
+</html
